@@ -327,27 +327,24 @@ input[type="checkbox"]:hover {
     brightness(100%) contrast(95%);
 } /* dark grey */
 
-/* ------------------------ Responsive view  ----------------------  */
-
-/* Allow copy & generate hover effects for lager screen  */
-@media screen and (min-width: 576px) {
-  .copy-icon:hover svg *,
-  .copy-icon:hover {
-    cursor: pointer;
-    fill: #e6e5ea;
-  }
-
-  .generatebtn:hover {
-    color: #a4ffaf !important;
-    background-color: #18171f;
-    border-color: #a4ffaf;
-    cursor: pointer;
-  }
-  .generatebtn:hover .arrow {
-    filter: invert(94%) sepia(9%) saturate(1778%) hue-rotate(61deg)
-      brightness(100%) contrast(103%);
-  }
+.copy-icon:hover svg *,
+.copy-icon:hover {
+  cursor: pointer;
+  fill: #e6e5ea;
 }
+
+.generatebtn:hover {
+  color: #a4ffaf !important;
+  background-color: #18171f;
+  border-color: #a4ffaf;
+  cursor: pointer;
+}
+.generatebtn:hover .arrow {
+  filter: invert(94%) sepia(9%) saturate(1778%) hue-rotate(61deg)
+    brightness(100%) contrast(103%);
+}
+
+/* ------------------------ Responsive view  ----------------------  */
 
 /* For small desktop */
 @media screen and (min-width: 576px) and (max-width: 1024px) {

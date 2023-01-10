@@ -44,7 +44,7 @@ body {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 5px 30px;
+  padding: 13px 30px;
   margin: 18px 0;
 }
 
@@ -58,7 +58,7 @@ body {
 .setting-box {
   background-color: var(--element-background-color);
   height: auto;
-  padding: 14px 30px;
+  padding: 20px 30px;
 }
 
 .length-contianer {
@@ -322,29 +322,31 @@ input[type="checkbox"]:hover {
   justify-content: center;
 }
 
-.generatebtn:hover {
-  color: #a4ffaf !important;
-  background-color: #18171f;
-  border-color: #a4ffaf;
-  cursor: pointer;
-}
-
 .arrow {
   filter: invert(7%) sepia(14%) saturate(1025%) hue-rotate(208deg)
     brightness(100%) contrast(95%);
 } /* dark grey */
 
-.generatebtn:hover .arrow {
-  filter: invert(94%) sepia(9%) saturate(1778%) hue-rotate(61deg)
-    brightness(100%) contrast(103%);
-}
+/* ------------------------ Responsive view  ----------------------  */
 
-.copy-icon:hover svg *,
-.copy-icon:active svg *,
-.copy-icon:hover,
-.copy-icon:active {
-  cursor: pointer;
-  fill: #e6e5ea;
+/* Allow copy & generate hover effects for lager screen  */
+@media screen and (min-width: 576px) {
+  .copy-icon:hover svg *,
+  .copy-icon:hover {
+    cursor: pointer;
+    fill: #e6e5ea;
+  }
+
+  .generatebtn:hover {
+    color: #a4ffaf !important;
+    background-color: #18171f;
+    border-color: #a4ffaf;
+    cursor: pointer;
+  }
+  .generatebtn:hover .arrow {
+    filter: invert(94%) sepia(9%) saturate(1778%) hue-rotate(61deg)
+      brightness(100%) contrast(103%);
+  }
 }
 
 /* For small desktop */
@@ -400,11 +402,11 @@ input[type="checkbox"]:hover {
   }
 
   .setting-box {
-    padding: 5px 14px;
+    padding: 10px 14px 18px 14px;
   }
 
   .password-container {
-    padding: 10px 20px;
+    padding: 8px 14px;
   }
 
   .indicator-container > p {
